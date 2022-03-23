@@ -25,13 +25,14 @@ body {
     display:grid;
     grid-template-rows: auto 1fr auto;
     width: 300PX;
+    justify-items: center;
 }
 
 .logo {
     width: 150px;
     margin-bottom: 48px;
     justify-self: center;
-    /* display: none; */
+    display: none;
 }
 
 .title {
@@ -57,27 +58,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 24px;
 }
-
-.email-image img {
-    width: 80px;
-}
-
-.resend {
-    font-size: var(--sm);
-}
-
-.resend span {
-    color: var(--verey-light-pink)
-}
-
-.resend a {
-    color: var(--hospital-green);
-    text-decoration: none;
-}
-
 
 .form{
+    width: 300px;
     display: flex;
     flex-direction: column;
 }
@@ -116,7 +101,7 @@ body {
 }
 
 @media (max-width: 640px) {
-    .log{
+    .logo {
         display: block;
     }
 }
